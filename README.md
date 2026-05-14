@@ -1,18 +1,35 @@
-## Getting Started
+# 🏦 Desafio Banco Digital com POO
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![POO](https://img.shields.io/badge/Orientação_a_Objetos-black?style=for-the-badge)
 
-## Folder Structure
+## 🎯 Sobre o Projeto
 
-The workspace contains two folders by default, where:
+Este repositório contém a minha solução para o desafio **"Criando um Banco Digital com Java e Orientação a Objetos"**, proposto frequentemente em bootcamps de tecnologia. 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+A proposta do projeto é simular o funcionamento básico de um banco, modelando o domínio da aplicação e implementando as regras de negócio de diferentes tipos de contas bancárias, tudo isso utilizando os pilares da Programação Orientada a Objetos (POO).
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## ⚙️ Funcionalidades Implementadas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+O sistema bancário simulado permite as seguintes operações básicas:
 
-## Dependency Management
+* **Criação de Clientes e Contas:** Associação de um cliente a uma conta bancária.
+* **Tipos de Contas:** Diferenciação entre Conta Corrente e Conta Poupança.
+* **Depósitos e Saques:** Validação de saldo para retirar e adicionar valores.
+* **Transferências:** Envio de valores de uma conta para outra com atualização instantânea dos saldos.
+* **Extrato Bancário:** Impressão dos dados da conta e saldo atual.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🧠 Arquitetura e Conceitos (POO)
+
+A estrutura do projeto foi desenhada para aplicar os quatro pilares fundamentais da Orientação a Objetos:
+
+* **Abstração:** Criação de uma classe mãe/interface `Conta` que define o contrato básico de qualquer conta bancária.
+* **Encapsulamento:** Os saldos e dados sensíveis dos clientes são privados e só podem ser manipulados através de métodos específicos.
+* **Herança:** As classes `ContaCorrente` e `ContaPoupanca` herdam atributos e comportamentos genéricos da classe mãe `Conta`.
+* **Polimorfismo:** Possibilidade de tratar diferentes tipos de contas de forma genérica na hora de imprimir extratos ou realizar operações.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **[Linguagem]** Java
+* Paradigma de Programação Orientada a Objetos (POO)
